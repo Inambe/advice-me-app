@@ -1,0 +1,23 @@
+.advice-app
+    padding: 3rem
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &--title
+        font-size: 4rem
+        font-weight: 900
+        margin-bottom: 3rem
+        text-transform: uppercase
+    &--wrapper
+        margin-bottom: 3rem
+    &--loader
+        font-size: 2rem
+    &--advice
+        font-size: 2rem
+        border: 2px dashed $c-secondary
+        padding: 1rem
+        &::before
+            content: "\201C ";
+        &::after
+            content: " \201D"
