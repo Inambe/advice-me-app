@@ -22,7 +22,7 @@ class App extends React.Component {
     render() {
         return (
             <div className="advice-app">
-                <h1 className="advice-app--title">Advice 🎉</h1>
+                <h1 className="advice-app--title">Advice Me🎉</h1>
                 <div className="advice-app--wrapper">
                 {this.state.advice ? (
                     <p
