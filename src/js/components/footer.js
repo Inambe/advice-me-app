@@ -2,14 +2,15 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className="footer">
-            <p className="footer--attr">
+        <footer className="footer">
+            <p>
                 Powered by
                 <a target="_blank" href="https://api.adviceslip.com/">Advice Slip JSON API</a>
-                Designed by
+            </p>
+            <p>
                 <a target="_blank" href="https://github.com/inambe">Inam Ul Huq</a>
             </p>
-        </div>
+        </footer>
     );
 };
 

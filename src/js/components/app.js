@@ -21,21 +21,16 @@ class App extends React.Component {
     }
     render() {
         return (
-            <div className="advice-app">
-                <h1 className="advice-app--title">Advice Me🎉</h1>
-                <div className="advice-app--wrapper">
+            <React.Fragment>
+                <div className="mb-1 mt-5">
                 {this.state.advice ? (
-                    <p
-                        style={{fontSize: this.state.advice.length > 50 ? "1.6rem" : null }}
-                        className="advice-app--advice">
-                    {this.state.advice}
-                    </p>
+                    <p className="advice">{this.state.advice}</p>
                 ) : (
                     <div className="advice-app--loader">Loading ...</div>
                 )}
                 </div>
                 <Footer />
-            </div>
+            </React.Fragment>
         );
     }
 };
